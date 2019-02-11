@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+    <script type="text/Javascript">
+    var precio2=0;
+    var PrecioM=0;
+    var precio=0;
+    var cantidad=0;
+
+    precio=parseInt(prompt("Digite el precio de la camisa que desea comprar"));
+    cantidad=parseInt(prompt("Digite la cantidad de camisas que desea comprar"));
+        
+        PrecioM=precio*cantidad;
+        
+    if (cantidad>=1 && cantidad<=4){
+        precio2=precio*(1-0.125);
+    
+    var Monto=PrecioM-precio2;
+    document.write("El precio a pagar sin descuento es: "+PrecioM);
+    document.write("El descuento realizado es de: "+precio2);
+    document.write("El precio a pagar con descuento es: "+Monto);
+    }
+          
+    if (cantidad>=5 && cantidad<=8){
+     precio2=precio*(1-0.20);
+
+    var Monto=PrecioM-precio2;
+    document.write("El precio a pagar sin descuento es: "+PrecioM);
+    document.write("El descuento realizado es de: "+precio2);
+    document.write("El precio a pagar con descuento es: "+Monto);
+    }
+        
+        if (cantidad>8){
+     precio2=precio*(1-0.315);
+
+    var Monto=PrecioM-precio2;
+    document.write("El precio a pagar sin descuento es: "+PrecioM);
+    document.write("El descuento realizado es de: "+precio2);
+    document.write("El precio a pagar con descuento es: "+Monto);
+    }
+
+</script>
+</head>
+</html>

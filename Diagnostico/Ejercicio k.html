@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+    <script type="text/Javascript">
+    var numero1=0;
+    var numero2=0;
+    var numero3=0;
+        numero1=parseInt(prompt("Digite un numero entero"));
+        numero2=parseInt(prompt("Digite un numero entero"));
+        numero3=parseInt(prompt("Digite un numero entero"));
+        if (numero1<0 && numero2<0 && numero3<0){
+          document.write("Ningun numero es positivo");
+        }
+        else 
+            if (numero1>0 && numero2>0 && numero3>0){
+                if (numero1<=numero2 && numero1<=numero3){
+          document.write("El numero menor positivo es: "+numero1);
+        }
+                if (numero2<=numero1 && numero2<=numero3){
+          document.write("El numero menor positivo es: "+numero2);
+        }
+                if (numero3<=numero1 && numero3<=numero2){
+          document.write("El numero menor positivo es: "+numero3);
+        }
+            }
+</script>
+</head>
+</html>
+
+                

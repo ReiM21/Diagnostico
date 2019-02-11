@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+    <script type="text/Javascript">
+    var nota1=0;
+    var nota2=0;
+    var nota3=0;
+    var nota4=0;
+        nota1=parseInt(prompt("Digite la nota 1"));
+        nota2=parseInt(prompt("Digite la nota 2"));
+        nota3=parseInt(prompt("Digite la nota 3"));
+        nota4=parseInt(prompt("Digite la nota 4"));
+     if (nota1<nota2 && nota1<nota3 && nota1<nota4){
+         promedio=(nota2+nota3+nota4)/3;
+    document.write("La nota eliminada es: "+nota1);
+    document.write("El promedio de las notas mas altas es: "+promedio);
+        
+}
+        else
+        if (nota2<nota1 && nota2<nota3 && nota2<nota4){
+     promedio=(nota1+nota3+nota4)/3;
+    document.write("La nota eliminada es: "+nota2);
+    document.write("El promedio de las notas mas altas es: "+promedio);
+        }
+        
+     else
+        if (nota3<nota1 && nota3<nota2 && nota3<nota4){
+     promedio=(nota1+nota2+nota4)/3;
+    document.write("La nota eliminada es: "+nota3);
+    document.write("El promedio de las notas mas altas es: "+promedio);
+        }
+     else
+        if (nota4<nota1 && nota4<nota2 && nota4<nota3){
+     promedio=(nota1+nota2+nota3)/3;
+    document.write("La nota eliminada es: "+nota4);
+    document.write("El promedio de las notas mas altas es: "+promedio);
+        }
+        
+       
+        
+        
+</script>
+</head>
+</html>

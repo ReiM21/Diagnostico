@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+    <script type="text/Javascript">
+    var horas=0;
+    var minutos=0;
+    var pago=0;
+
+    var horas=parseInt(prompt("Digite la cantidad de horas que el vehiculo ha estado en el estacionamiento"));
+    var minutos=parseInt(prompt("Digite la cantidad de minutos que el vehiculo ha estado en el estacionamiento"));
+        if (minutos>0){
+            horas=horas+1;
+            pago=horas*2.5;
+    document.write("El total a pagar en dolares es: "+pago);
+}
+else {
+    pago=horas*2.5;
+   document.write("El total a pagar en dolares es: "+pago);
+}
+</script>
+</head>
